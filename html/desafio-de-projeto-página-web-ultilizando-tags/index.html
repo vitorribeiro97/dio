@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com HTM</title>
+</head>
+<body>
+    <h1>Primeiros Passos com HTML</h1>
+    <hr>
+
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#historia-computadores">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura-html">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#listas-ol-ul">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#refs">Links de referências</a></li>
+    </ul>
+    <hr>
+
+    <h3 id="historia-computadores">Uma breve história dos computadores.</h3>
+    <p>
+        A história dos computadores é uma jornada fascinante que se estende por milênios. Começando na antiguidade, vemos os primeiros dispositivos de cálculo, como o ábaco, que foram essenciais para as práticas comerciais e científicas da época. Ao longo dos séculos, surgiram outras ferramentas mecânicas, como o astrolábio e o relógio de água, demonstrando a constante busca da humanidade por métodos mais eficientes de processamento de informações.<br>
+        <br>
+        No século XVII e XVIII, visionários como Charles Babbage começaram a conceber máquinas de calcular mecânicas mais complexas, como a Máquina Diferencial e a Máquina Analítica, que foram precursores dos computadores modernos. O século XX marcou o surgimento dos computadores eletrônicos, com destaques como o Colossus britânico e o ENIAC nos Estados Unidos, pavimentando o caminho para a era digital que estava por vir.<br>
+        <br>
+        Durante os anos seguintes, testemunhamos avanços significativos, desde os primeiros computadores comerciais até o surgimento dos minicomputadores nos anos 60 e a revolução dos microprocessadores nos anos 70. Foi nessa década que a Apple e a Microsoft foram fundadas, sinalizando o início da era dos computadores pessoais.<br>
+        <br>
+        A década de 80 viu a popularização dos PCs, com o IBM PC e seus clones compatíveis dominando o mercado. A internet começou a se tornar acessível ao público em geral nos anos 90, transformando radicalmente a forma como as pessoas se comunicam e interagem globalmente.<br>
+        <br>
+        Desde o início do século XXI, testemunhamos um crescimento exponencial na capacidade de processamento e armazenamento de dados, impulsionado pelo avanço da tecnologia. A computação em nuvem, a inteligência artificial, a computação quântica e a Internet das Coisas emergiram como campos revolucionários, prometendo moldar ainda mais o futuro da tecnologia e da sociedade.<br>
+        <br>
+        Essa jornada histórica nos mostra como os computadores evoluíram desde simples dispositivos mecânicos até os complexos sistemas digitais que permeiam quase todos os aspectos de nossas vidas modernas.<br>
+    </p>
+    <hr>
+
+    <h3 id="clients">O que são <i>Clients?</i></h3>
+    <p>
+        Dispositivos de computação ou software que solicitam e recebem serviços, recursos ou informações de outro sistema, conhecido como servidor. Os clientes são componentes fundamentais em arquiteturas de rede e sistemas distribuídos, pois interagem com servidores para obter dados, processamento ou outros serviços.<br>
+        <br>
+        Por exemplo, em uma arquitetura cliente-servidor típica na web, um navegador da web atua como cliente, solicitando páginas da web de servidores remotos. O navegador envia solicitações para o servidor web, que por sua vez processa essas solicitações e envia as páginas solicitadas de volta ao navegador para exibição.<br>
+    </p>
+    <hr>
+    
+    <h3 id="servers">O que são <i>Servers?</i></h3>
+    <p>
+        São sistemas de computação ou software que fornecem serviços, recursos ou informações para outros dispositivos de rede ou clientes. Os servidores são responsáveis por processar e atender às solicitações dos clientes, geralmente através de uma rede, como a internet.
+    </p>
+    <hr>
+    
+    <h3 id="estrutura-html">Como funciona uma estrutura básica de um HTML?</h3>
+    <p>
+        O documento HTML sempre inicia com o que chamamos de estrutura básica. Esta estrutura é quase que imutável. Sempre será dessa forma e você sempre, sempre começará seu HTML começando por esse código. Geralmente os editores como o Sublime Text já tem atalhos para iniciar os documentos HTMLs com essa estrutura, logo, você não precisa se preocupar em decorá-la, mas é bom que faça. Veja abaixo como ela se inicia:
+    </p>
+    
+    <h4>Doctype - Definindo o documento</h4>
+    <p>O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, que o código encontrado ali é um código HTML. Assim eles sabem o que fazer para mostrar seu site da melhor forma possível. Lembre-se: o doctype é OBRIGATÓRIO e deve ser sempre a PRIMEIRA LINHA do seu documento.</p>
+
+    <h4>Head</h4>
+    <p>Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag head.</p>
+
+    <h4>Body</h4>
+    <p>Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a apresentação de entrada de dados (formulários) também se aplica neste seção do documento. Na prática, o corpo do documento é delimitado pelo par de tags &lt;body&gt; e &lt;/body&gt;.</p>
+    <hr>
+
+    <h3 id="listas-ol-ul">Entendendo a diferença entre listas ordenadas e não ordenadas</i></h3>
+    <p>Listas ordenadas e não ordenadas são dois tipos de listas comuns em HTML.</p>
+    <h4>Listas Ordenadas (<i>&lt;ol&gt;</i> - Ordered List):</h4>
+        <ol>
+            <li>Uma lista ordenada é uma lista de itens que são numerados em uma ordem específica.</li>
+            <li>Os itens são geralmente numerados com números sequenciais (1, 2, 3, ...) por padrão.</li>
+            <li>A aparência visual desses números pode ser alterada usando CSS.</li>
+            <li>Os itens de uma lista ordenada são criados usando a tag <li> (List Item).</li>
+        </ol>
+            <p><strong>Exemplo:</strong><br>
+                <pre>
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+                </pre>
+            </p>
+
+            <h4>Listas Não Ordenadas (<i>&lt;ul&gt;</i> - Unordered List):</h4>
+        <ul>
+            <li>Uma lista não ordenada é uma lista de itens que não segue uma ordem específica.</li>
+            <li>Os itens são geralmente marcados com símbolos de marcadores (pontos, círculos, quadrados, etc.) por padrão.</li>
+            <li>A aparência visual desses números pode ser alterada usando CSS.</li>
+            <li>Os itens de uma lista ordenada são criados usando a tag <li> (List Item).</li>
+        </ul>
+            <p><strong>Exemplo:</strong><br>
+                <pre>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+                </pre>
+    <hr>
+
+    <h3 id="refs">Links de referências</i></h3>
+    <p></p>
+    <a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/" target="_blank">História dos Computadores</a> | 
+    <a href="https://www.cloudflare.com/pt-br/learning/serverless/glossary/client-side-vs-server-side/" target="_blank">Clients & Servers</a> | 
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">Html</a> | 
+    <a href="https://www.devmedia.com.br/trabalhando-com-listas-ordenadas-no-html/21739" target="_blank">Listas OL e UL</a> 
+    <hr>
+
+    <footer>
+        <small>Desenvolvido por <strong><a href="https://github.com/vitorribeiro97">Vitor Ribeiro</a></strong></small> 
+    </footer>
+</body>
+</html>
